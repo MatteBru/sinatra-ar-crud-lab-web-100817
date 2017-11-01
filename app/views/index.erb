@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All The Posts</title>
+  </head>
+  <body>
+    <h1>ayy</h1>
+    <%@posts.each do |post|%>
+    <h4><%= post.name %></h4>
+    <p><%= post.content %></p><br>
+    <%end %>
+
+    <h3><%="#{@destroyed.name} was deleted" if @destroyed%></h3>
+  </body>
+</html>

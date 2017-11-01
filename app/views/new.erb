@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create A Post</title>
+  </head>
+  <body>
+    <h1>Create A New Post!</h1>
+
+    <form action="/posts" method="post">
+      <label>Post Name: <input type="text" name="post[name]" id="name"></label><br>
+      <label>Content: <textarea name="post[content]" rows="8" cols="80" id="content"></textarea></label><br>
+      <input type="submit" name="Save" id="submit">
+    </form>
+
+  </body>
+</html>
